@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carluguini: Rodando no Futuro</title>
+    <!-- Importa o Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importa a fonte 'Press Start 2P' do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte 'Press Start 2P' para todo o corpo do documento */
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #000000; /* Fundo preto principal */
+            color: #E0E0E0; /* Cor do texto padrão para contraste */
+        }
+        /* Estilos personalizados para o site Carluguini */
+        .header-bg {
+            background-color: #1A1A1A; /* Um tom de preto um pouco mais claro para o cabeçalho */
+        }
+        .text-neon-blue {
+            color: #00BFFF; /* Azul neon para títulos e destaques */
+        }
+        .text-neon-red {
+            color: #FF007F; /* Vermelho neon para acentos e avisos */
+        }
+        .border-neon-blue {
+            border-color: #00BFFF;
+        }
+        .border-neon-red {
+            border-color: #FF007F;
+        }
+        /* Efeito de brilho para os elementos interativos */
+        .glow-effect {
+            box-shadow: 0 0 8px rgba(0, 191, 255, 0.6), 0 0 12px rgba(0, 191, 255, 0.4);
+            transition: all 0.3s ease-in-out;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.8), 0 0 20px rgba(0, 191, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        .btn-futuristic {
+            background-color: #00BFFF; /* Fundo azul para botões */
+            color: #000000; /* Texto preto nos botões */
+            border-radius: 9999px; /* Botões arredondados */
+            padding: 0.75rem 1.5rem;
+            font-size: 0.875rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .btn-futuristic:hover {
+            background-color: #009ACD; /* Azul mais escuro no hover */
+            transform: scale(1.05); /* Pequeno aumento no tamanho ao passar o mouse */
+        }
+        .section-separator {
+            border-top: 2px dashed #00BFFF; /* Linha tracejada azul como separador */
+            margin: 4rem auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200">
+    <!-- Cabeçalho Principal -->
+    <header class="header-bg shadow-lg py-4 fixed w-full z-10">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <!-- Título do Site -->
+            <a href="#home" class="text-3xl text-neon-blue uppercase glow-effect p-2 rounded-lg mb-4 md:mb-0">Carluguini</a>
+            <!-- Navegação -->
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8 text-sm">
+                    <li><a href="#home" class="text-white hover:text-neon-red glow-effect px-3 py-2 rounded-md transition-colors">Início</a></li>
+                    <li><a href="#design" class="text-white hover:text-neon-red glow-effect px-3 py-2 rounded-md transition-colors">Design</a></li>
+                    <li><a href="#tecnologia" class="text-white hover:text-neon-red glow-effect px-3 py-2 rounded-md transition-colors">Tecnologia</a></li>
+                    <li><a href="#sustentabilidade" class="text-white hover:text-neon-red glow-effect px-3 py-2 rounded-md transition-colors">Sustentabilidade</a></li>
+                    <li><a href="#precos" class="text-white hover:text-neon-red glow-effect px-3 py-2 rounded-md transition-colors">Preços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20"> <!-- Adiciona padding superior para não ser coberto pelo header fixo -->
+        <!-- Seção Início -->
+        <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center"
+            style="background-image: url('{{uploaded:9.png-1a293f55-45d5-4556-8ab5-5c6a57bc26c8}}');"> <!-- Imagem Mercedes-Benz Vision AVTR para o hero -->
+            <div class="absolute inset-0 bg-black opacity-70"></div> <!-- Overlay escuro -->
+            <div class="z-0 text-center p-8 rounded-lg">
+                <h1 class="text-5xl md:text-7xl text-neon-red mb-6 animate-pulse">Carluguini</h1>
+                <p class="text-xl md:text-3xl text-neon-blue mb-8">Rodando no Futuro: Uma Viagem Pelas Rodas do Amanhã!</p>
+                <a href="#design" class="btn-futuristic glow-effect">Explore o Futuro!</a>
+            </div>
+        </section>
+
+        <hr class="section-separator">
+
+        <!-- Seção Design Futurista -->
+        <section id="design" class="container mx-auto py-16 px-4">
+            <h2 class="text-4xl text-neon-blue text-center mb-12">Design Alucinante!</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-blue glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Formas Inovadoras</h3>
+                    <p class="text-lg">Esqueça os carros de hoje! Os carros do futuro terão formas que parecem de outro planeta. Serão super aerodinâmicos para cortar o vento e economizar energia. Pense em linhas super fluidas, sem quinas, que parecem ter sido esculpidas pelo próprio vento!</p>
+                    <img src="{{uploaded:5.png-f9badb8f-daeb-4251-828c-a150e35d2226}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-blue">
+                </div>
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-red glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Materiais Mágicos</h3>
+                    <p class="text-lg">Carros feitos de materiais que se curam sozinhos, como se tivessem superpoderes! E que tal vidros que mudam de cor ou ficam transparentes com um toque? Isso tudo vai deixar os carros mais leves, seguros e com uma aparência sensacional!</p>
+                    <img src="{{uploaded:2.png-7e366815-f2dc-46f2-9345-1a96c06eb8c9}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-red">
+                </div>
+            </div>
+            <p class="text-center text-lg mt-10">O design vai ser tão legal que vai parecer que você está dirigindo uma nave espacial ou um robô gigante!</p>
+        </section>
+
+        <hr class="section-separator">
+
+        <!-- Seção Tecnologia e Conectividade -->
+        <section id="tecnologia" class="container mx-auto py-16 px-4">
+            <h2 class="text-4xl text-neon-red text-center mb-12">Tecnologia Que Vira Jogo!</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-red glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Carros que Dirigem Sozinhos (Quase!)</h3>
+                    <p class="text-lg">Hoje já existem carros que estacionam sozinhos ou mantêm a distância do carro da frente. No futuro, muitos carros vão se dirigir sozinhos! Você vai poder jogar, ler ou até dormir enquanto o carro te leva com segurança. É como ter um motorista robô superinteligente!</p>
+                    <img src="{{uploaded:8.png-361c415f-9042-456b-bc75-fc165973d5b7}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-red">
+                </div>
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-blue glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Cérebro Artificial (IA)</h3>
+                    <p class="text-lg">Os carros do futuro terão inteligência artificial (IA) que vai aprender sobre você! Ela vai saber qual música você gosta, a rota mais rápida e até te avisar se você esqueceu a mochila. E o melhor: os carros vão conversar entre si e com a cidade para evitar engarrafamentos e acidentes!</p>
+                    <img src="{{uploaded:6.png-7cf12958-6159-4c5b-98b4-95e9acada172}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-blue">
+                </div>
+            </div>
+            <p class="text-center text-lg mt-10">A tecnologia vai ser tão avançada que dirigir vai ser mais divertido e seguro do que nunca!</p>
+        </section>
+
+        <hr class="section-separator">
+
+        <!-- Seção Propulsão e Sustentabilidade -->
+        <section id="sustentabilidade" class="container mx-auto py-16 px-4">
+            <h2 class="text-4xl text-neon-blue text-center mb-12">Energia Limpa Para o Planeta!</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-blue glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Elétricos e a Hidrogênio</h3>
+                    <p class="text-lg">Hoje já temos carros elétricos incríveis. No futuro, eles serão ainda melhores, com baterias que carregam em minutos e duram muito! E também teremos carros movidos a hidrogênio, que soltam apenas água pelo escapamento. É a chance de deixar o planeta limpinho!</p>
+                    <img src="{{uploaded:1.png-8a058911-b711-4c71-92ba-b002a45fefb5}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-blue"> <!-- Nota: Imagem ilustrativa para o conceito de carro moderno e potente, similar a futuros elétricos. -->
+                </div>
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-red glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Cidades Inteligentes</h3>
+                    <p class="text-lg">As cidades vão ter ruas que carregam os carros enquanto eles andam, como se fosse magia! E os materiais usados para fazer os carros serão recicláveis, para não poluir o meio ambiente. É um futuro onde a gente se diverte e cuida da natureza ao mesmo tempo!</p>
+                    <img src="{{uploaded:3.png-d0302faa-556b-4a7f-a675-5eec5d7b60d8}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-red">
+                </div>
+            </div>
+            <p class="text-center text-lg mt-10">Menos poluição e mais diversão nas ruas do amanhã!</p>
+        </section>
+
+        <hr class="section-separator">
+
+        <!-- Seção Preços e Acessibilidade -->
+        <section id="precos" class="container mx-auto py-16 px-4">
+            <h2 class="text-4xl text-neon-red text-center mb-12">Quanto Vai Custar Essa Brincadeira?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-red glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Hoje x Amanhã: Uma Comparação</h3>
+                    <p class="text-lg">Hoje, um carro elétrico top de linha ou com muita tecnologia pode custar de <strong>R$ 300.000 a R$ 1.000.000</strong> ou mais. Mas calma! A tecnologia sempre fica mais barata com o tempo, assim como os primeiros celulares que eram gigantes e caríssimos!</p>
+                    <img src="{{uploaded:7.png-9e0dd53f-0b1d-4611-9413-0592d3d57f3e}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-red">
+                </div>
+                <div class="bg-gray-900 p-8 rounded-xl border-2 border-neon-blue glow-effect">
+                    <h3 class="text-2xl text-white mb-4">Carros Voadores e Super Tecnológicos</h3>
+                    <p class="text-lg">Os primeiros "carrões" do futuro, tipo os que voam, podem custar uma fortuna, algo como <strong>R$ 5.000.000 a R$ 20.000.000</strong> (como um helicóptero pequeno!). Mas, quando a produção aumentar, esperamos que os carros autônomos e elétricos super avançados cheguem a preços entre <strong>R$ 200.000 e R$ 800.000</strong>, parecido com os carros de luxo de hoje.</p>
+                    <p class="text-lg mt-4">E o mais legal: talvez a gente nem precise comprar um carro! Pode ser que a gente só pague para usar quando precisar, tipo um serviço de transporte super moderno. É como ter um carro particular, mas sem ter que se preocupar com nada!</p>
+                    <img src="{{uploaded:4.png-d3cebc03-79b1-4f2a-acb2-200702800248}}" alt="" class="w-full h-auto rounded-lg mt-6 border border-neon-blue">
+                </div>
+            </div>
+            <p class="text-center text-lg mt-10">O futuro vai ser cheio de opções para todo mundo, mesmo para quem não quiser ter um "carluguini" próprio!</p>
+        </section>
+
+        <hr class="section-separator">
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 py-8 px-4 text-center text-gray-500 text-sm mt-16">
+        <p>&copy; 2025 Carluguini. Todos os direitos reservados. Feito com paixão pelo futuro.</p>
+    </footer>
+
+    <!-- Script para rolagem suave da navegação (opcional, mas melhora a experiência) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
