@@ -1,0 +1,49 @@
+/* Define a fonte 'Press Start 2P' para todo o corpo do documento */
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #000000; /* Fundo preto principal */
+            color: #E0E0E0; /* Cor do texto padrão para contraste */
+        }
+        /* Estilos personalizados para o site Carluguini */
+        .header-bg {
+            background-color: #1A1A1A; /* Um tom de preto um pouco mais claro para o cabeçalho */
+        }
+        .text-neon-blue {
+            color: #00BFFF; /* Azul neon para títulos e destaques */
+        }
+        .text-neon-red {
+            color: #FF007F; /* Vermelho neon para acentos e avisos */
+        }
+        .border-neon-blue {
+            border-color: #00BFFF;
+        }
+        .border-neon-red {
+            border-color: #FF007F;
+        }
+        /* Efeito de brilho para os elementos interativos */
+        .glow-effect {
+            box-shadow: 0 0 8px rgba(0, 191, 255, 0.6), 0 0 12px rgba(0, 191, 255, 0.4);
+            transition: all 0.3s ease-in-out;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.8), 0 0 20px rgba(0, 191, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        .btn-futuristic {
+            background-color: #00BFFF; /* Fundo azul para botões */
+            color: #000000; /* Texto preto nos botões */
+            border-radius: 9999px; /* Botões arredondados */
+            padding: 0.75rem 1.5rem;
+            font-size: 0.875rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .btn-futuristic:hover {
+            background-color: #009ACD; /* Azul mais escuro no hover */
+            transform: scale(1.05); /* Pequeno aumento no tamanho ao passar o mouse */
+        }
+        .section-separator {
+            border-top: 2px dashed #00BFFF; /* Linha tracejada azul como separador */
+            margin: 4rem auto;
+            width: 80%;
+        }
